@@ -1,0 +1,138 @@
+print(True)
+True
+bool(0)
+int("1")
+str(7)
+float(0)
+
+val = False
+print(val)
+
+#############
+## Boolean operators
+#############
+5==4
+5<4
+5>=4
+5!=5
+not True
+(not True) or (not False)
+
+## Interger operators
+0.5
+int(2.51)
+round(0.5)   ### BE CAREFUL HERE
+round(1.5)
+val = 0.2
+print(val)
+
+## Operators
+1+2
+5-3
+5*4
+11/2
+11//2
+11%2
+13^4
+13**4
+
+val = 5
+val += 1
+print(val)
+
+### Strings 
+val = 'Hello'
+val += ' World!'
+print(val)
+
+#########
+## List/collections
+#########
+
+list_ex = []
+[3]
+[7,8]
+list_ex
+not(list_ex) ## Return true if empty
+list_ex.append(7)
+list_ex.extend([9,10])
+list_ex
+list_ex.extend(7)
+list_ex.append([9,10])
+list_ex
+list_ex + [12]
+list_ex += [13]
+
+
+list_ex[1]
+list_ex[-1]
+list_ex[2:-2]
+list_ex[2:]
+list_ex[:-2]
+
+## Tuples
+tup_ex = ('a','b','c','d','e')
+tup_ex[3] = 'c'
+tup_ex[2]
+tup_ex += ('f')
+('hello','world')[5<2]
+
+## Dictionaries
+dict1 = {'a':1,'b':2}
+dict1['d']
+dict1.get('c',3)
+dict1['d'] = 4
+
+if True:
+    print('it\'s true')
+    print('it\'s still true')
+else:
+    print('it\'s false')
+print('I run no matter what')
+
+
+for i in range(90,100,2):
+    print(i)
+for val in list_ex:
+    print(val)
+for i,val in enumerate(list_ex):
+    print(i,val)
+
+
+tmp = 5
+while tmp > 0:
+    print(tmp)
+    tmp -= 2
+    if tmp < 0:
+        tmp = 6
+        #continue
+        break
+    
+def factorial(x):
+    if x <= 1:
+        return(1)
+    else:
+        return(factorial(x-1)*x)
+    
+    
+factorial(5)
+    
+list_ex = [1,2,3]
+tmp = list_ex
+list_ex = [x**2 for x in list_ex] 
+list_ex
+tmp    
+
+list_ex = [1,2,3]
+tmp = list_ex
+for i in range(len(list_ex)):
+    list_ex[i] = list_ex[i]**2
+list_ex
+tmp
+
+list_ex = [1,2,3]
+tmp = list(list_ex)
+for i in range(len(list_ex)):
+    list_ex[i] = list_ex[i]**2
+list_ex
+tmp
