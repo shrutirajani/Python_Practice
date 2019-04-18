@@ -1,4 +1,4 @@
-Lasso method
+## Lasso method
 Lasso is another extension built on regularized linear regression, but with a small twist. The loss function of Lasso is in the form:
 
 L = ∑( Ŷi– Yi)2 + λ∑ |β|
